@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1D62D771BF539EF00CCE91B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D761BF539EF00CCE91B /* Parse.framework */; };
+		B1D62D791BFAF0C800CCE91B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D781BFAF0C800CCE91B /* libsqlite3.tbd */; };
+		B1D62D7B1BFAF0D900CCE91B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D7A1BFAF0D900CCE91B /* libz.tbd */; };
+		B1D62D7D1BFAF10500CCE91B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D7C1BFAF10500CCE91B /* SystemConfiguration.framework */; };
+		B1D62D7F1BFAF10D00CCE91B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D7E1BFAF10D00CCE91B /* StoreKit.framework */; };
+		B1D62D811BFAF11400CCE91B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D801BFAF11400CCE91B /* Security.framework */; };
+		B1D62D831BFAF11A00CCE91B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D821BFAF11A00CCE91B /* QuartzCore.framework */; };
+		B1D62D851BFAF12200CCE91B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D841BFAF12200CCE91B /* CoreLocation.framework */; };
+		B1D62D871BFAF12800CCE91B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D861BFAF12800CCE91B /* CoreGraphics.framework */; };
+		B1D62D891BFAF12F00CCE91B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D881BFAF12F00CCE91B /* CFNetwork.framework */; };
+		B1D62D8B1BFAF13600CCE91B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D8A1BFAF13600CCE91B /* AudioToolbox.framework */; };
+		B1D62D8C1BFAF15900CCE91B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D741BF539DE00CCE91B /* Bolts.framework */; };
+		B1D62D901BFBA60900CCE91B /* eventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D62D8F1BFBA60900CCE91B /* eventTableViewController.swift */; };
+		B1D62D941BFBC6BE00CCE91B /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D62D931BFBC6BE00CCE91B /* detailsViewController.swift */; };
+		B1D62D961BFBD2E500CCE91B /* run.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1D62D951BFBD2E500CCE91B /* run.jpg */; };
+		B1D62D981BFBD39000CCE91B /* movie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1D62D971BFBD39000CCE91B /* movie.jpg */; };
+		B1D62D9A1BFE487900CCE91B /* addEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D62D991BFE487900CCE91B /* addEventViewController.swift */; };
 		B1E9B92C1BF5127000F46AC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E9B92B1BF5127000F46AC1 /* AppDelegate.swift */; };
 		B1E9B92E1BF5127000F46AC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E9B92D1BF5127000F46AC1 /* ViewController.swift */; };
 		B1E9B9311BF5127000F46AC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E9B92F1BF5127000F46AC1 /* Main.storyboard */; };
@@ -34,6 +51,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1D62D741BF539DE00CCE91B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = finalProj/Bolts.framework; sourceTree = "<group>"; };
+		B1D62D761BF539EF00CCE91B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = finalProj/Parse.framework; sourceTree = "<group>"; };
+		B1D62D781BFAF0C800CCE91B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B1D62D7A1BFAF0D900CCE91B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B1D62D7C1BFAF10500CCE91B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B1D62D7E1BFAF10D00CCE91B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B1D62D801BFAF11400CCE91B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B1D62D821BFAF11A00CCE91B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B1D62D841BFAF12200CCE91B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B1D62D861BFAF12800CCE91B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1D62D881BFAF12F00CCE91B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B1D62D8A1BFAF13600CCE91B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B1D62D8F1BFBA60900CCE91B /* eventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = eventTableViewController.swift; path = ../eventTableViewController.swift; sourceTree = "<group>"; };
+		B1D62D931BFBC6BE00CCE91B /* detailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = detailsViewController.swift; path = ../detailsViewController.swift; sourceTree = "<group>"; };
+		B1D62D951BFBD2E500CCE91B /* run.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = run.jpg; sourceTree = "<group>"; };
+		B1D62D971BFBD39000CCE91B /* movie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = movie.jpg; sourceTree = "<group>"; };
+		B1D62D991BFE487900CCE91B /* addEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addEventViewController.swift; sourceTree = "<group>"; };
 		B1E9B9281BF5127000F46AC1 /* finalProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E9B92B1BF5127000F46AC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E9B92D1BF5127000F46AC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +88,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D62D8B1BFAF13600CCE91B /* AudioToolbox.framework in Frameworks */,
+				B1D62D891BFAF12F00CCE91B /* CFNetwork.framework in Frameworks */,
+				B1D62D871BFAF12800CCE91B /* CoreGraphics.framework in Frameworks */,
+				B1D62D851BFAF12200CCE91B /* CoreLocation.framework in Frameworks */,
+				B1D62D831BFAF11A00CCE91B /* QuartzCore.framework in Frameworks */,
+				B1D62D811BFAF11400CCE91B /* Security.framework in Frameworks */,
+				B1D62D7F1BFAF10D00CCE91B /* StoreKit.framework in Frameworks */,
+				B1D62D7D1BFAF10500CCE91B /* SystemConfiguration.framework in Frameworks */,
+				B1D62D7B1BFAF0D900CCE91B /* libz.tbd in Frameworks */,
+				B1D62D791BFAF0C800CCE91B /* libsqlite3.tbd in Frameworks */,
+				B1D62D771BF539EF00CCE91B /* Parse.framework in Frameworks */,
+				B1D62D8C1BFAF15900CCE91B /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +123,18 @@
 		B1E9B91F1BF5127000F46AC1 = {
 			isa = PBXGroup;
 			children = (
+				B1D62D8A1BFAF13600CCE91B /* AudioToolbox.framework */,
+				B1D62D881BFAF12F00CCE91B /* CFNetwork.framework */,
+				B1D62D861BFAF12800CCE91B /* CoreGraphics.framework */,
+				B1D62D841BFAF12200CCE91B /* CoreLocation.framework */,
+				B1D62D821BFAF11A00CCE91B /* QuartzCore.framework */,
+				B1D62D801BFAF11400CCE91B /* Security.framework */,
+				B1D62D7E1BFAF10D00CCE91B /* StoreKit.framework */,
+				B1D62D7C1BFAF10500CCE91B /* SystemConfiguration.framework */,
+				B1D62D7A1BFAF0D900CCE91B /* libz.tbd */,
+				B1D62D781BFAF0C800CCE91B /* libsqlite3.tbd */,
+				B1D62D741BF539DE00CCE91B /* Bolts.framework */,
+				B1D62D761BF539EF00CCE91B /* Parse.framework */,
 				B1E9B92A1BF5127000F46AC1 /* finalProj */,
 				B1E9B93F1BF5127100F46AC1 /* finalProjTests */,
 				B1E9B94A1BF5127100F46AC1 /* finalProjUITests */,
@@ -97,9 +155,14 @@
 		B1E9B92A1BF5127000F46AC1 /* finalProj */ = {
 			isa = PBXGroup;
 			children = (
+				B1D62D971BFBD39000CCE91B /* movie.jpg */,
+				B1D62D951BFBD2E500CCE91B /* run.jpg */,
 				B1E9B92B1BF5127000F46AC1 /* AppDelegate.swift */,
+				B1D62D931BFBC6BE00CCE91B /* detailsViewController.swift */,
+				B1D62D8F1BFBA60900CCE91B /* eventTableViewController.swift */,
 				B1E9B92D1BF5127000F46AC1 /* ViewController.swift */,
 				B1E9B92F1BF5127000F46AC1 /* Main.storyboard */,
+				B1D62D991BFE487900CCE91B /* addEventViewController.swift */,
 				B1E9B9321BF5127000F46AC1 /* Assets.xcassets */,
 				B1E9B9341BF5127000F46AC1 /* LaunchScreen.storyboard */,
 				B1E9B9371BF5127000F46AC1 /* Info.plist */,
@@ -229,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E9B9361BF5127000F46AC1 /* LaunchScreen.storyboard in Resources */,
+				B1D62D981BFBD39000CCE91B /* movie.jpg in Resources */,
 				B1E9B9331BF5127000F46AC1 /* Assets.xcassets in Resources */,
 				B1E9B9311BF5127000F46AC1 /* Main.storyboard in Resources */,
+				B1D62D961BFBD2E500CCE91B /* run.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D62D901BFBA60900CCE91B /* eventTableViewController.swift in Sources */,
 				B1E9B92E1BF5127000F46AC1 /* ViewController.swift in Sources */,
 				B1E9B92C1BF5127000F46AC1 /* AppDelegate.swift in Sources */,
+				B1D62D941BFBC6BE00CCE91B /* detailsViewController.swift in Sources */,
+				B1D62D9A1BFE487900CCE91B /* addEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/finalProj",
+				);
 				INFOPLIST_FILE = finalProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Labs.finalProj;
@@ -409,6 +481,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/finalProj",
+				);
 				INFOPLIST_FILE = finalProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Labs.finalProj;
@@ -483,6 +559,7 @@
 				B1E9B9521BF5127100F46AC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1E9B9531BF5127100F46AC1 /* Build configuration list for PBXNativeTarget "finalProjTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +568,7 @@
 				B1E9B9551BF5127100F46AC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1E9B9561BF5127100F46AC1 /* Build configuration list for PBXNativeTarget "finalProjUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +577,7 @@
 				B1E9B9581BF5127100F46AC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
