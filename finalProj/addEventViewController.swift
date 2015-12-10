@@ -10,12 +10,60 @@ import UIKit
 import Parse
 import Bolts
 
-class addEventViewController: UIViewController {
+class addEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBAction func tapScreen(sender: AnyObject) {
         UIApplication.sharedApplication().sendAction("resignFirstResponder", to:nil, from:nil, forEvent:nil)
 
     }
+    @IBOutlet weak var imageView: UIImageView!
+    
+   /* @IBAction func uploadImageFromSource(sender: AnyObject){
+        var imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        imagePicker.allowsEditing = false
+        self.presentViewController(imagePicker, animated: true, completion: nil)
+        
+    }*/
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        imageView.image = image
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        //uploadImageText.titleLable?.text = "Change"
+    }
+    
+    
+    @IBAction func loadImageButton(sender: AnyObject) {
+        
+        var imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        imagePicker.allowsEditing = false
+        self.presentViewController(imagePicker, animated: true, completion: nil)
+        
+        /*imagePicker.allowsEditing = false
+        imagePicker.sourceType = .PhotoLibrary
+        
+        presentViewController(imagePicker, animated: true, completion: nil)
+        
+        imagePicker.delegate = self
+        func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+            if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                imageView.contentMode = .ScaleAspectFit
+                imageView.image = pickedImage
+            }
+            
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+        func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+            dismissViewControllerAnimated(true, completion: nil)
+        }*/
+    }
+  
+   // let imagePicker = UIImagePickerController()
+    
     
     @IBOutlet weak var Event: UITextField!
     
@@ -31,13 +79,69 @@ class addEventViewController: UIViewController {
         event["Time"] = Time.text!
         event["Location"] = Location.text!
         event["Description"] = Description.text!
-        
-        event.saveInBackground()
+        event["Club"] = PFUser.currentUser()!["Club"]
+        //event.saveInBackground()
         Event.text = ""
         Time.text = ""
         Location.text = ""
         Description.text = ""
-    
+    //this is where adding an image to the submit events page starts
+        
+        if imageView.image == nil {
+            //image is not included alert user
+            print("Image not uploaded")
+            event.saveInBackground()
+        }
+        else {
+            //create an image data
+            let imageData = UIImagePNGRepresentation(self.imageView.image!)
+            //create a parse file to store in cloud
+            
+            let parseImageFile = PFFile(name: "uploaded_image.png", data: imageData!)
+            
+            event["imageFile"] = parseImageFile
+            event.saveInBackgroundWithBlock({
+                (success: Bool, error: NSError?) -> Void in
+            })
+           
+           
+        }
+        
+        
+        
+      /*  if imageView.image == nil{
+            print("image doesnt exist")
+        }
+        else{
+            var pic = PFObject(className: "Events")
+            //pic["user"] = PFUser.currentUser()
+            pic.saveInBackgroundWithBlock({(success: Bool, error: NSError?) -> Void in
+                
+                if error == nil{
+                    
+                    var imageData = UIImagePNGRepresentation(self.imageView.image!)
+                    
+                    var parseImageFile = PFFile(name:"uploaded_image.png", data: imageData!)
+                    
+                    pic["imageFile"] = parseImageFile
+                    pic.saveInBackgroundWithBlock({(success: Bool, error: NSError?) -> Void in
+                        
+                        if error == nil{
+                            print("uploaded")
+                        }
+                        else{
+                            print(error)
+                        }
+                    })
+                    
+                }
+                
+                
+                
+            })
+            
+        }
+            */
         
     }
     
@@ -45,8 +149,7 @@ class addEventViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+                // Do any additional setup after loading the view.
         self.Description.layer.borderColor = UIColor.grayColor().CGColor
         self.Description.layer.borderWidth = 0.5
         self.Description.layer.cornerRadius = 8

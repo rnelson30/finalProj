@@ -29,8 +29,18 @@ class detailsViewController: UIViewController {
         if let eventData = eventData{
             event.text = eventData["Event"] as! String
             loc.text = eventData["Location"] as! String
+                
+            if let userPicture = eventData["imageFile"] as? PFFile {
+                userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+                    if (error == nil) {
+                        self.pic.image = UIImage(data:imageData!)
+                    }
+                }
+            }
+            else{
+              //  pic.image = UIImage(named: "movie.jpg")
+            }
             
-            pic.image = UIImage(named:"movie.jpg")
             des.text = eventData["Description"] as! String
             des.scrollRangeToVisible(NSMakeRange(0, 1))
             

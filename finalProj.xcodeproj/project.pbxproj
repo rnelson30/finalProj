@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B101001F1C121BE400D7381F /* sportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101001E1C121BE400D7381F /* sportsTableViewCell.swift */; };
+		B10100231C1259C200D7381F /* eventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10100221C1259C200D7381F /* eventTableViewCell.swift */; };
+		B10100251C13C80900D7381F /* academicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10100241C13C80900D7381F /* academicTableViewCell.swift */; };
+		B10100271C13CE2200D7381F /* healthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10100261C13CE2200D7381F /* healthTableViewCell.swift */; };
+		B18215911C13FFD800C87432 /* agricultureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18215901C13FFD800C87432 /* agricultureTableViewCell.swift */; };
+		B18215931C140C5E00C87432 /* myClbsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18215921C140C5E00C87432 /* myClbsTableViewController.swift */; };
+		B18215951C14A09700C87432 /* myClbsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18215941C14A09700C87432 /* myClbsTableViewCell.swift */; };
+		B195BCAB1C13D32300A810DF /* cultureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B195BCAA1C13D32300A810DF /* cultureTableViewCell.swift */; };
+		B195BCAD1C13D4F800A810DF /* hobbyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B195BCAC1C13D4F800A810DF /* hobbyTableViewCell.swift */; };
 		B1D62D771BF539EF00CCE91B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D761BF539EF00CCE91B /* Parse.framework */; };
 		B1D62D791BFAF0C800CCE91B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D781BFAF0C800CCE91B /* libsqlite3.tbd */; };
 		B1D62D7B1BFAF0D900CCE91B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D62D7A1BFAF0D900CCE91B /* libz.tbd */; };
@@ -31,6 +40,17 @@
 		B1E9B9361BF5127000F46AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E9B9341BF5127000F46AC1 /* LaunchScreen.storyboard */; };
 		B1E9B9411BF5127100F46AC1 /* finalProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E9B9401BF5127100F46AC1 /* finalProjTests.swift */; };
 		B1E9B94C1BF5127100F46AC1 /* finalProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E9B94B1BF5127100F46AC1 /* finalProjUITests.swift */; };
+		B1F6CF821C10DA6100ED6763 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF811C10DA6100ED6763 /* loginViewController.swift */; };
+		B1F6CF841C10DA7900ED6763 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF831C10DA7900ED6763 /* registerViewController.swift */; };
+		B1F6CF861C10E3AC00ED6763 /* AgricultureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF851C10E3AC00ED6763 /* AgricultureViewController.swift */; };
+		B1F6CF881C10E3B400ED6763 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF871C10E3B400ED6763 /* HealthViewController.swift */; };
+		B1F6CF8A1C10E3D500ED6763 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF891C10E3D500ED6763 /* HobbyViewController.swift */; };
+		B1F6CF8C1C10E3DF00ED6763 /* CulturalReligiousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF8B1C10E3DF00ED6763 /* CulturalReligiousViewController.swift */; };
+		B1F6CF8E1C10E3E800ED6763 /* AcademicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF8D1C10E3E800ED6763 /* AcademicViewController.swift */; };
+		B1F6CF901C10E3F500ED6763 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF8F1C10E3F500ED6763 /* SampleData.swift */; };
+		B1F6CF921C10E40000ED6763 /* Clubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF911C10E40000ED6763 /* Clubs.swift */; };
+		B1F6CF941C10E40C00ED6763 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF931C10E40C00ED6763 /* SportsViewController.swift */; };
+		B1F6CF9A1C1142F400ED6763 /* normRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6CF991C1142F400ED6763 /* normRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +71,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B101001E1C121BE400D7381F /* sportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sportsTableViewCell.swift; sourceTree = "<group>"; };
+		B10100221C1259C200D7381F /* eventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventTableViewCell.swift; sourceTree = "<group>"; };
+		B10100241C13C80900D7381F /* academicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = academicTableViewCell.swift; path = ../academicTableViewCell.swift; sourceTree = "<group>"; };
+		B10100261C13CE2200D7381F /* healthTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = healthTableViewCell.swift; sourceTree = "<group>"; };
+		B18215901C13FFD800C87432 /* agricultureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = agricultureTableViewCell.swift; sourceTree = "<group>"; };
+		B18215921C140C5E00C87432 /* myClbsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myClbsTableViewController.swift; sourceTree = "<group>"; };
+		B18215941C14A09700C87432 /* myClbsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myClbsTableViewCell.swift; sourceTree = "<group>"; };
+		B195BCAA1C13D32300A810DF /* cultureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cultureTableViewCell.swift; sourceTree = "<group>"; };
+		B195BCAC1C13D4F800A810DF /* hobbyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hobbyTableViewCell.swift; sourceTree = "<group>"; };
 		B1D62D741BF539DE00CCE91B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = finalProj/Bolts.framework; sourceTree = "<group>"; };
 		B1D62D761BF539EF00CCE91B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = finalProj/Parse.framework; sourceTree = "<group>"; };
 		B1D62D781BFAF0C800CCE91B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -81,6 +110,17 @@
 		B1E9B9471BF5127100F46AC1 /* finalProjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finalProjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E9B94B1BF5127100F46AC1 /* finalProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalProjUITests.swift; sourceTree = "<group>"; };
 		B1E9B94D1BF5127100F46AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F6CF811C10DA6100ED6763 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		B1F6CF831C10DA7900ED6763 /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		B1F6CF851C10E3AC00ED6763 /* AgricultureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgricultureViewController.swift; sourceTree = "<group>"; };
+		B1F6CF871C10E3B400ED6763 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		B1F6CF891C10E3D500ED6763 /* HobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		B1F6CF8B1C10E3DF00ED6763 /* CulturalReligiousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CulturalReligiousViewController.swift; sourceTree = "<group>"; };
+		B1F6CF8D1C10E3E800ED6763 /* AcademicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcademicViewController.swift; sourceTree = "<group>"; };
+		B1F6CF8F1C10E3F500ED6763 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		B1F6CF911C10E40000ED6763 /* Clubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clubs.swift; sourceTree = "<group>"; };
+		B1F6CF931C10E40C00ED6763 /* SportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		B1F6CF991C1142F400ED6763 /* normRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = normRegisterViewController.swift; path = ../normRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,9 +200,29 @@
 				B1E9B92B1BF5127000F46AC1 /* AppDelegate.swift */,
 				B1D62D931BFBC6BE00CCE91B /* detailsViewController.swift */,
 				B1D62D8F1BFBA60900CCE91B /* eventTableViewController.swift */,
+				B10100221C1259C200D7381F /* eventTableViewCell.swift */,
+				B1F6CF931C10E40C00ED6763 /* SportsViewController.swift */,
+				B101001E1C121BE400D7381F /* sportsTableViewCell.swift */,
+				B1F6CF911C10E40000ED6763 /* Clubs.swift */,
+				B1F6CF8F1C10E3F500ED6763 /* SampleData.swift */,
+				B1F6CF8D1C10E3E800ED6763 /* AcademicViewController.swift */,
+				B10100241C13C80900D7381F /* academicTableViewCell.swift */,
+				B1F6CF8B1C10E3DF00ED6763 /* CulturalReligiousViewController.swift */,
+				B195BCAA1C13D32300A810DF /* cultureTableViewCell.swift */,
+				B18215921C140C5E00C87432 /* myClbsTableViewController.swift */,
+				B18215941C14A09700C87432 /* myClbsTableViewCell.swift */,
+				B1F6CF871C10E3B400ED6763 /* HealthViewController.swift */,
+				B10100261C13CE2200D7381F /* healthTableViewCell.swift */,
+				B1F6CF851C10E3AC00ED6763 /* AgricultureViewController.swift */,
+				B18215901C13FFD800C87432 /* agricultureTableViewCell.swift */,
+				B1F6CF891C10E3D500ED6763 /* HobbyViewController.swift */,
+				B195BCAC1C13D4F800A810DF /* hobbyTableViewCell.swift */,
 				B1E9B92D1BF5127000F46AC1 /* ViewController.swift */,
 				B1E9B92F1BF5127000F46AC1 /* Main.storyboard */,
 				B1D62D991BFE487900CCE91B /* addEventViewController.swift */,
+				B1F6CF811C10DA6100ED6763 /* loginViewController.swift */,
+				B1F6CF831C10DA7900ED6763 /* registerViewController.swift */,
+				B1F6CF991C1142F400ED6763 /* normRegisterViewController.swift */,
 				B1E9B9321BF5127000F46AC1 /* Assets.xcassets */,
 				B1E9B9341BF5127000F46AC1 /* LaunchScreen.storyboard */,
 				B1E9B9371BF5127000F46AC1 /* Info.plist */,
@@ -255,6 +315,7 @@
 				TargetAttributes = {
 					B1E9B9271BF5127000F46AC1 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = VLZ3PH5UMC;
 					};
 					B1E9B93B1BF5127100F46AC1 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -320,11 +381,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F6CF821C10DA6100ED6763 /* loginViewController.swift in Sources */,
+				B1F6CF901C10E3F500ED6763 /* SampleData.swift in Sources */,
+				B18215951C14A09700C87432 /* myClbsTableViewCell.swift in Sources */,
+				B101001F1C121BE400D7381F /* sportsTableViewCell.swift in Sources */,
+				B18215911C13FFD800C87432 /* agricultureTableViewCell.swift in Sources */,
 				B1D62D901BFBA60900CCE91B /* eventTableViewController.swift in Sources */,
+				B10100251C13C80900D7381F /* academicTableViewCell.swift in Sources */,
+				B1F6CF8A1C10E3D500ED6763 /* HobbyViewController.swift in Sources */,
 				B1E9B92E1BF5127000F46AC1 /* ViewController.swift in Sources */,
+				B1F6CF841C10DA7900ED6763 /* registerViewController.swift in Sources */,
+				B1F6CF881C10E3B400ED6763 /* HealthViewController.swift in Sources */,
+				B1F6CF8E1C10E3E800ED6763 /* AcademicViewController.swift in Sources */,
 				B1E9B92C1BF5127000F46AC1 /* AppDelegate.swift in Sources */,
+				B195BCAD1C13D4F800A810DF /* hobbyTableViewCell.swift in Sources */,
+				B1F6CF861C10E3AC00ED6763 /* AgricultureViewController.swift in Sources */,
 				B1D62D941BFBC6BE00CCE91B /* detailsViewController.swift in Sources */,
+				B18215931C140C5E00C87432 /* myClbsTableViewController.swift in Sources */,
+				B1F6CF921C10E40000ED6763 /* Clubs.swift in Sources */,
+				B195BCAB1C13D32300A810DF /* cultureTableViewCell.swift in Sources */,
+				B1F6CF8C1C10E3DF00ED6763 /* CulturalReligiousViewController.swift in Sources */,
+				B10100271C13CE2200D7381F /* healthTableViewCell.swift in Sources */,
+				B10100231C1259C200D7381F /* eventTableViewCell.swift in Sources */,
 				B1D62D9A1BFE487900CCE91B /* addEventViewController.swift in Sources */,
+				B1F6CF9A1C1142F400ED6763 /* normRegisterViewController.swift in Sources */,
+				B1F6CF941C10E40C00ED6763 /* SportsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,14 +547,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/finalProj",
 				);
 				INFOPLIST_FILE = finalProj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Labs.finalProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -481,14 +566,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/finalProj",
 				);
 				INFOPLIST_FILE = finalProj/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Labs.finalProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

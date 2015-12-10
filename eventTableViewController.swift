@@ -10,18 +10,39 @@ import UIKit
 import Parse
 class eventTableViewController: UITableViewController {
     
-    var eventData: [PFObject]?
+    var eventData: [PFObject] = []
     
+    @IBOutlet weak var addEvent: UIButton!
+    @IBAction func logOut(sender: AnyObject) {
+    
+    PFUser.logOut()
+    self.performSegueWithIdentifier("logout", sender: self)
+    }
     func refreshData() {
+       
         
         let query2 = PFQuery(className:"NewEvent")
         query2.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in
             if let objects = objects {
+                    self.eventData = []
+                for object in objects{
+                    let user = PFUser.currentUser()
+                        if user?["Favorites"] != nil{
+                            for var x = 0; x < user?["Favorites"].count; ++x {
+                            if object["Club"] as? String == user?["Favorites"][x] as? String{
+                                self.eventData.append(object)
+                            }
+                        }
                 
-                self.eventData = objects
-                self.tableView.reloadData()
+                    }
+                }
             }
+            
+                self.tableView.reloadData()
+               
+            }
+           
         }
         
         /*if let url = NSURL(string: "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson") {
@@ -46,7 +67,8 @@ class eventTableViewController: UITableViewController {
             download.resume()
             
         }*/
-    }
+    
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,19 +78,18 @@ class eventTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        let user = PFUser.currentUser()
+        
+        if user!["Club"] == nil {
+           
+            addEvent.hidden = true
+        }
       
+        
+        
         refreshData()
         
-       /* let query2 = PFQuery(className:"NewEvent")
-        query2.findObjectsInBackgroundWithBlock {
-            (objects: [PFObject]?, error: NSError?) -> Void in
-            if let objects = objects {
-                //print(objects)
-                for obj in objects {
-                    print(obj["Event"])
-                }
-            }
-        }*/
+       
 
 
     }
@@ -82,32 +103,36 @@ class eventTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        if eventData != nil {
-            return 1
-        }
-        
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if let eventData = eventData {
+        
             
             return eventData.count
-        }
-
-        return 0
+        
     }
 
+   
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("tableViewCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("tableViewCell", forIndexPath: indexPath) as! eventTableViewCell
 
         // Configure the cell...
-        let event = eventData![indexPath.row]
-        cell.textLabel?.text = event["Event"] as! String
-        print(event["Event"])
-
+        let event = eventData[indexPath.row]
+        cell.eventTitle?.text = event["Event"] as? String
+        cell.clubTitle?.text = event["Club"] as? String
+        
+        if let userPicture = event["imageFile"] as? PFFile {
+            userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+                if (error == nil) {
+                    cell.titleImg.image  = UIImage(data:imageData!)
+                }
+            }
+        }
+        
+        
         return cell
     }
     
@@ -167,7 +192,7 @@ class eventTableViewController: UITableViewController {
         }*/
         if let destination = segue.destinationViewController as? detailsViewController{
             if let selectedIndex = tableView.indexPathForSelectedRow?.row {
-                destination.eventData  = eventData?[selectedIndex] 
+                destination.eventData  = eventData[selectedIndex] 
                 
             }
         }
